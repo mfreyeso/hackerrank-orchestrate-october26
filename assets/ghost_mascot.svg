@@ -1,0 +1,347 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="100%" height="100%">
+  <defs>
+    <!-- Background / Floating Shadow Gradients -->
+    <radialGradient id="dropShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b4263" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#3b4263" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#3b4263" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ghost Outer Glow -->
+    <radialGradient id="ghostGlow" cx="48%" cy="45%" r="52%">
+      <stop offset="60%" stop-color="#818cf8" stop-opacity="0.22"/>
+      <stop offset="85%" stop-color="#c084fc" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ghost Main Body Gradient -->
+    <linearGradient id="ghostBodyGrad" x1="30%" y1="10%" x2="70%" y2="95%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#f8fafc"/>
+      <stop offset="80%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+
+    <!-- Ghost Head Highlight -->
+    <radialGradient id="ghostHeadHighlight" cx="38%" cy="28%" r="40%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Ghost Arm Gradients -->
+    <linearGradient id="armLeftGrad" x1="70%" y1="20%" x2="20%" y2="80%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+
+    <linearGradient id="armRightGrad" x1="20%" y1="20%" x2="80%" y2="80%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+
+    <!-- Cheeks Blush -->
+    <radialGradient id="blushGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b8b" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#ff8da1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffa5b5" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Database Cylinder Gradients -->
+    <linearGradient id="dbBodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="25%" stop-color="#38bdf8"/>
+      <stop offset="65%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <linearGradient id="dbTopGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="60%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="dbRimHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Letter Envelope Gradients -->
+    <linearGradient id="envBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <linearGradient id="envFlapGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <linearGradient id="waxSealGrad" x1="20%" y1="20%" x2="80%" y2="80%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="45%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+
+    <!-- Gold Sparkle Gradient -->
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Filter for soft subtle shadow on items -->
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="8" stdDeviation="6" flood-color="#1e1b4b" flood-opacity="0.2"/>
+    </filter>
+    <filter id="propShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="10" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Floating Shadow -->
+  <ellipse cx="440" cy="780" rx="220" ry="32" fill="url(#dropShadow)"/>
+  <ellipse cx="440" cy="780" rx="140" ry="20" fill="url(#dropShadow)"/>
+
+  <!-- Magical / Tech Sparkles around Ghost -->
+  <!-- Top Left Sparkle -->
+  <path d="M 170 230 Q 180 230 180 220 Q 180 230 190 230 Q 180 230 180 240 Q 180 230 170 230 Z" fill="url(#sparkleGrad)" filter="url(#softShadow)"/>
+  <circle cx="180" cy="230" r="3" fill="#ffffff"/>
+
+  <!-- Top Right Sparkle -->
+  <path d="M 730 210 Q 745 210 745 195 Q 745 210 760 210 Q 745 210 745 225 Q 745 210 730 210 Z" fill="url(#sparkleGrad)" filter="url(#softShadow)"/>
+  <circle cx="745" cy="210" r="4" fill="#ffffff"/>
+
+  <!-- Small floating sparkle near DB -->
+  <path d="M 780 430 Q 790 430 790 420 Q 790 430 800 430 Q 790 430 790 440 Q 790 430 780 430 Z" fill="#38bdf8"/>
+  <circle cx="790" cy="430" r="2" fill="#ffffff"/>
+
+  <!-- Small floating sparkle near Letter -->
+  <path d="M 120 510 Q 130 510 130 500 Q 130 510 140 510 Q 130 510 130 520 Q 130 510 120 510 Z" fill="url(#sparkleGrad)"/>
+
+  <!-- Soft Ethereal Ghost Aura -->
+  <ellipse cx="430" cy="430" rx="280" ry="260" fill="url(#ghostGlow)"/>
+
+  <!-- GHOST TAIL / LOWER BODY (Flowing cute tail pointing back-left) -->
+  <path d="M 270 560 
+           C 210 590, 160 550, 150 490 
+           C 142 445, 175 425, 210 435 
+           C 235 442, 255 465, 275 490 
+           Z" 
+        fill="url(#ghostBodyGrad)"/>
+
+  <!-- MAIN GHOST BODY (Round, chubby Boo-like silhouette) -->
+  <!-- Center ~ (440, 440) -->
+  <path d="M 440 170 
+           C 610 170, 710 280, 710 440 
+           C 710 590, 600 690, 460 690 
+           C 360 690, 270 635, 230 550 
+           C 195 470, 210 370, 270 270 
+           C 320 195, 380 170, 440 170 
+           Z" 
+        fill="url(#ghostBodyGrad)"
+        filter="url(#softShadow)"/>
+
+  <!-- Head 3D Specular Highlight (Soft bright shine on top forehead) -->
+  <path d="M 430 185 
+           C 540 185, 620 250, 630 350 
+           C 570 260, 480 215, 380 220 
+           C 340 222, 310 235, 290 255 
+           C 325 205, 375 185, 430 185 
+           Z" 
+        fill="url(#ghostHeadHighlight)"/>
+
+  <!-- Left Arm (Reaching forward & holding the letter) -->
+  <path d="M 285 460 
+           C 230 465, 175 495, 170 550 
+           C 167 580, 195 605, 230 595 
+           C 265 585, 295 550, 315 505 
+           Z" 
+        fill="url(#armLeftGrad)"
+        filter="url(#softShadow)"/>
+
+  <!-- Chubby stubby little left hand fingers grasping the letter -->
+  <circle cx="195" cy="565" r="16" fill="#f8fafc"/>
+  <circle cx="215" cy="580" r="14" fill="#f1f5f9"/>
+
+  <!-- ============================================== -->
+  <!-- THE LETTER / ENVELOPE (Held on the left side) -->
+  <!-- ============================================== -->
+  <g transform="translate(90, 490) rotate(-12)" filter="url(#propShadow)">
+    <!-- Envelope Shadow Base -->
+    <rect x="0" y="0" width="165" height="115" rx="10" fill="#cbd5e1"/>
+    <!-- Envelope Body -->
+    <rect x="2" y="2" width="161" height="111" rx="9" fill="url(#envBodyGrad)"/>
+    
+    <!-- Fold Lines (Back folds) -->
+    <path d="M 2 111 L 82 58 L 163 111 Z" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5"/>
+    <path d="M 2 2 L 65 60 L 2 111 Z" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+    <path d="M 163 2 L 100 60 L 163 111 Z" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+    
+    <!-- Top Flap (pointing down, sealed) -->
+    <path d="M 2 3 L 82 66 L 163 3 Z" fill="url(#envFlapGrad)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Shiny Wax Seal with Audit Checkmark -->
+    <circle cx="82" cy="66" r="20" fill="url(#waxSealGrad)" filter="url(#softShadow)"/>
+    <circle cx="82" cy="66" r="15" fill="#ef4444" stroke="#fca5a5" stroke-width="1"/>
+    <!-- White Checkmark on Seal (verified deletion / audit!) -->
+    <path d="M 75 66 L 80 71 L 90 60" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- GHOST FACE (Friendly, Happy Mario-style Boo!) -->
+  <!-- ============================================== -->
+
+  <!-- Left Rosy Cheek -->
+  <ellipse cx="325" cy="445" rx="36" ry="24" fill="url(#blushGrad)"/>
+  <!-- Cute blush stripes -->
+  <line x1="312" y1="440" x2="318" y2="452" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="324" y1="439" x2="330" y2="451" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="336" y1="440" x2="342" y2="452" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right Rosy Cheek -->
+  <ellipse cx="535" cy="445" rx="36" ry="24" fill="url(#blushGrad)"/>
+  <!-- Cute blush stripes -->
+  <line x1="522" y1="440" x2="528" y2="452" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="534" y1="439" x2="540" y2="451" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="546" y1="440" x2="552" y2="452" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left Eye -->
+  <g>
+    <!-- Eye Base Oval -->
+    <ellipse cx="345" cy="375" rx="20" ry="32" fill="#1e1b4b" transform="rotate(-4 345 375)"/>
+    <!-- Big Catchlight Highlight -->
+    <ellipse cx="351" cy="360" rx="9" ry="14" fill="#ffffff" transform="rotate(-6 351 360)"/>
+    <!-- Secondary cute small catchlight -->
+    <circle cx="340" cy="390" r="5" fill="#ffffff"/>
+  </g>
+
+  <!-- Right Eye -->
+  <g>
+    <!-- Eye Base Oval -->
+    <ellipse cx="505" cy="375" rx="20" ry="32" fill="#1e1b4b" transform="rotate(4 505 375)"/>
+    <!-- Big Catchlight Highlight -->
+    <ellipse cx="511" cy="360" rx="9" ry="14" fill="#ffffff" transform="rotate(2 511 360)"/>
+    <!-- Secondary cute small catchlight -->
+    <circle cx="500" cy="390" r="5" fill="#ffffff"/>
+  </g>
+
+  <!-- Happy Eyebrows -->
+  <path d="M 325 328 C 340 320, 360 324, 372 332" fill="none" stroke="#6366f1" stroke-width="4.5" stroke-linecap="round" opacity="0.85"/>
+  <path d="M 525 332 C 538 324, 558 320, 572 328" fill="none" stroke="#6366f1" stroke-width="4.5" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Happy Open Mouth Smile (Cute Boo-style smile with 1 little adorable round fang!) -->
+  <g>
+    <!-- Mouth Cavity -->
+    <path d="M 390 425 
+             C 385 470, 465 475, 470 425 
+             C 472 418, 460 418, 430 420 
+             C 400 418, 388 418, 390 425 Z" 
+          fill="#4c0519"/>
+    
+    <!-- Cute pink tongue -->
+    <path d="M 405 450 
+             C 415 440, 445 440, 455 450 
+             C 445 465, 415 465, 405 450 Z" 
+          fill="#fb7185"/>
+
+    <!-- Adorable little vampire / boo tooth on upper left -->
+    <path d="M 400 420 L 406 430 L 413 420 Z" fill="#ffffff"/>
+
+    <!-- Mouth outline stroke for clarity -->
+    <path d="M 388 423 
+             C 390 415, 400 419, 430 420 
+             C 460 419, 470 415, 472 423
+             C 475 470, 385 470, 388 423 Z" 
+          fill="none" stroke="#310e18" stroke-width="3.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Right Arm (Hugging/Holding the Database Cylinder) -->
+  <path d="M 580 470 
+           C 625 465, 680 480, 690 535 
+           C 695 565, 675 585, 645 580 
+           C 615 575, 580 545, 565 505 
+           Z" 
+        fill="url(#armRightGrad)"
+        filter="url(#softShadow)"/>
+
+  <!-- Chubby stubby right hand hugging front edge of database -->
+  <ellipse cx="645" cy="550" rx="16" ry="14" fill="#ffffff" filter="url(#softShadow)"/>
+  <ellipse cx="630" cy="565" rx="14" ry="12" fill="#f1f5f9"/>
+
+  <!-- ============================================== -->
+  <!-- DATABASE CYLINDER ICON (Held on right side)    -->
+  <!-- 3 Sleek Stacked Modern Disks/Tiers             -->
+  <!-- ============================================== -->
+  <g transform="translate(635, 430) rotate(8)" filter="url(#propShadow)">
+    
+    <!-- TIER 3 (BOTTOM DISK) -->
+    <!-- Bottom Rim & Body -->
+    <path d="M 10 140 
+             L 10 170 
+             A 65 24 0 0 0 140 170 
+             L 140 140 
+             A 65 24 0 0 1 10 140 Z" 
+          fill="url(#dbBodyGrad)"/>
+    <!-- Bottom Ellipse Surface -->
+    <ellipse cx="75" cy="140" rx="65" ry="24" fill="url(#dbTopGrad)" stroke="url(#dbRimHighlight)" stroke-width="2"/>
+    <!-- Data Status LED on Tier 3 -->
+    <circle cx="45" cy="158" r="4" fill="#22c55e"/>
+    <circle cx="45" cy="158" r="2" fill="#ffffff"/>
+    <circle cx="60" cy="160" r="4" fill="#0284c7"/>
+    <!-- Sleek data slot line -->
+    <line x1="80" y1="160" x2="115" y2="158" stroke="#bae6fd" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- TIER 2 (MIDDLE DISK) -->
+    <!-- Middle Rim & Body -->
+    <path d="M 10 80 
+             L 10 110 
+             A 65 24 0 0 0 140 110 
+             L 140 80 
+             A 65 24 0 0 1 10 80 Z" 
+          fill="url(#dbBodyGrad)"/>
+    <!-- Middle Ellipse Surface -->
+    <ellipse cx="75" cy="80" rx="65" ry="24" fill="url(#dbTopGrad)" stroke="url(#dbRimHighlight)" stroke-width="2"/>
+    <!-- Data Status LED on Tier 2 -->
+    <circle cx="45" cy="98" r="4" fill="#38bdf8"/>
+    <circle cx="45" cy="98" r="2" fill="#ffffff"/>
+    <circle cx="60" cy="100" r="4" fill="#22c55e"/>
+    <!-- Sleek data slot line -->
+    <line x1="80" y1="100" x2="115" y2="98" stroke="#bae6fd" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- TIER 1 (TOP DISK) -->
+    <!-- Top Rim & Body -->
+    <path d="M 10 20 
+             L 10 50 
+             A 65 24 0 0 0 140 50 
+             L 140 20 
+             A 65 24 0 0 1 10 20 Z" 
+          fill="url(#dbBodyGrad)"/>
+    <!-- Top Glowing Ellipse Surface -->
+    <ellipse cx="75" cy="20" rx="65" ry="24" fill="url(#dbTopGrad)" stroke="url(#dbRimHighlight)" stroke-width="2.5"/>
+    
+    <!-- Top Gloss Highlight Arc -->
+    <path d="M 25 18 A 52 18 0 0 1 120 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+    <!-- Circular core pulse on top cylinder -->
+    <ellipse cx="75" cy="20" rx="42" ry="14" fill="#0284c7" opacity="0.4"/>
+    <ellipse cx="75" cy="20" rx="22" ry="7" fill="#bae6fd" opacity="0.7"/>
+
+    <!-- Data Status LED on Tier 1 -->
+    <circle cx="45" cy="38" r="4" fill="#38bdf8"/>
+    <circle cx="45" cy="38" r="2" fill="#ffffff"/>
+    <circle cx="60" cy="40" r="4" fill="#38bdf8"/>
+    <!-- Sleek data slot line -->
+    <line x1="80" y1="40" x2="115" y2="38" stroke="#bae6fd" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Floating holographic mini checkmark badge above DB -->
+    <g transform="translate(100, -15)">
+      <circle cx="16" cy="16" r="16" fill="#10b981" filter="url(#softShadow)"/>
+      <circle cx="16" cy="16" r="13" fill="#34d399"/>
+      <path d="M 10 16 L 14 20 L 22 12" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+</svg>

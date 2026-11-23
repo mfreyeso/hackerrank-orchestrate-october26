@@ -1,0 +1,6 @@
+case_id,email,requested_at,reported_status,reported_at,audit_at,request_text
+extra_case_01,claire.dubois@gmail.com,2026-09-01T10:00:00Z,NOT_STARTED,2026-09-02T10:00:00Z,2026-09-15T12:00:00Z,"Hi, I only want a copy of my personal data and order history for my tax records. Please do not delete my account."
+extra_case_02,tombstone.leak@outlook.com,2026-09-02T10:00:00Z,COMPLETE,2026-09-03T10:00:00Z,2026-09-15T12:00:00Z,"Please permanently delete my account and remove my personal details, leaving only an internal reference if required for security records."
+extra_case_03,sync.recreate@proton.me,2026-09-03T10:00:00Z,COMPLETE,2026-09-04T10:00:00Z,2026-09-15T12:00:00Z,"I deleted my account last week, but my profile reappeared in search results and an integration still looks active. Please complete the deletion."
+extra_case_04,backup.risk@gmail.com,2026-09-04T10:00:00Z,PARTIALLY_COMPLETE,2026-09-05T10:00:00Z,2026-09-15T12:00:00Z,"Please close my account permanently and ensure that retained backups cannot restore my personal profile."
+extra_case_05,new.alias@proton.me,2026-09-05T10:00:00Z,PARTIALLY_COMPLETE,2026-09-06T10:00:00Z,2026-09-15T12:00:00Z,"Please erase my account and redact my old Yahoo email address from shared customer support threads."
